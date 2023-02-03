@@ -29,7 +29,7 @@
 			{
 				"language": "nesasm",
 				"scopeName": "source.nesasm",
-				"path": "./syntaxes/html1.tmLanguage.json"
+				"path": "./syntaxes/nesasm.Grammar.json"
 			}
 		]
 	},
