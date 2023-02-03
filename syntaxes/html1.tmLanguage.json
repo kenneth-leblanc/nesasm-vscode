@@ -1,0 +1,64 @@
+{
+    "scopeName": "source.nesasm",
+    "fileTypes": "asm",
+    "name": "nesasm",
+    "patterns": [ {
+        "include": "#singleLineComment"
+    }, {
+        "include": "#multilineComment"
+    }, {
+        "include": "#numericConstants"
+    }, {
+        "include": "#stringConstant"
+    }, {
+        "include": "#label"
+    }, {
+        "include": "#directives"
+    }, {
+        "include": "#instructions"
+    } ],
+    "repository": {
+        "singleLineComment": {
+            "begin": ";",
+            "end": "$",
+            "name": "comment.line.semicolon.nesasm"
+        },
+        "multilineComment": {
+            "begin": "/\\*",
+            "end": "\\*/",
+            "name": "comment.multiline.nesasm"
+        },
+        "numericConstants": {
+            "patterns": [ {
+                "match": "%[0-1]+",
+                "name": "constant.numeric.binary.nesasm" 
+            }, {
+                "match": "0[0-7]+",
+                "name": "constant.numeric.octal.nesasm"
+            }, {
+                "match": "[1-9][0-9]+",
+                "name": "constant.numeric.decimal.nesasm"
+            }, {
+                "match": "\\$[0-9a-fA-F]+",
+                "name": "constant.numeric.hexadecimal.nesasm"
+            } ]
+        },
+        "stringConstant": {
+            "begin": "\"",
+            "end": "\"",
+            "name": "string.quoted.double.nesasm"
+        },
+        "instructions": {
+            "match": "\\b(?i:ADC|AND|ASL|BCC|BCS|BEQ|BIT|BMI|BNE|BPL|BRK|BVC|BVS|CLC|CLD|CLI|CLV|CMP|CPX|CPY|DEC|DEX|DEY|EOR|INC|INX|INY|JMP|JSR|LDA|LDX|LDY|LSR|NOP|ORA|PHA|PHP|PLA|PLP|ROL|ROR|RTI|RTS|SBC|SEC|SED|SEI|STA|STX|STY|TAX|TAY|TSX|TXA|TXS|TYA)\\b",
+            "name": "keyword.other.instructions.nesasm"
+        },
+        "directives": {
+            "match": "\\b(?i:INCBIN|INCDIR|INCLUDE|EQU|=|EQM|SET|SETSTR|DC(\\.[BWLS])?|BYTE|WORD|LONG|(D[SV]|RES)(\\.[BWL])?|HEX|IFCONST|IFNCONST|IF|ENDIF|EIF|ELSE|REPEAT|REPEND|ORG|RORG|REND|SEG(\\.U)?|ALIGN|PROCESSOR|ECHO|SUBROUTINE|ERR|LIST|MAC(RO)?|ENDM|MEXIT)\\b",
+            "name": "keyword.operator.nesasm"
+        },
+        "label": {
+            "match": "^\\.?\\w+:?",
+            "name": "variable.other.label.nesasm"
+        }
+    }
+}
