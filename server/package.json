@@ -1,0 +1,19 @@
+{
+    "name": "nesasm-vscode-server",
+    "description": "A NESASM Language Server",
+    "version": "0.1",
+    "author": "Kenneth",
+    "license": "MIT",
+    "engines": {
+        "node": "*"
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/kenneth-leblanc/nesasm-vscode.git"
+    },
+    "dependencies": {
+        "vscode-languageserver": "8.0.2"
+    },
+    "scripts": {}
+
+}
