@@ -138,9 +138,9 @@ async function validateTextDocument(textDocument: TextDocument): Promise<void> {
 	// In this simple example we get the settings for every validate run.
 	const settings = await getDocumentSettings(textDocument.uri);
 
-	// The validator creates diagnostics for all uppercase words length 2 and more
+	// The validator creates diagnostics for all uppercase words length 8 and more
 	const text = textDocument.getText();
-	const pattern = /\b[A-Z]{2,}\b/g;
+	const pattern = /\b[A-Z]{8,}\b/g;
 	let m: RegExpExecArray | null;
 
 	let problems = 0;
@@ -194,12 +194,12 @@ connection.onCompletion(
 		// info and always provide the same completion items.
 		return [
 			{
-				label: 'TypeScript',
+				label: 'STA',
 				kind: CompletionItemKind.Text,
 				data: 1
 			},
 			{
-				label: 'JavaScript',
+				label: 'STX',
 				kind: CompletionItemKind.Text,
 				data: 2
 			}
@@ -212,11 +212,11 @@ connection.onCompletion(
 connection.onCompletionResolve(
 	(item: CompletionItem): CompletionItem => {
 		if (item.data === 1) {
-			item.detail = 'TypeScript details';
-			item.documentation = 'TypeScript documentation';
+			item.detail = 'STore Accumulator';
+			item.documentation = 'Bla';
 		} else if (item.data === 2) {
-			item.detail = 'JavaScript details';
-			item.documentation = 'JavaScript documentation';
+			item.detail = 'STore X Register';
+			item.documentation = 'Bla BLa';
 		}
 		return item;
 	}
