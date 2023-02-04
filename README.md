@@ -1,13 +1,15 @@
 # nesasm-vscode
-A VSCode extension to add support for programming in NESASM language for the 6502.
+A VSCode extension to add language support for programming in NESASM language for the 6502.
+You still need to provide your own NESASM compiler.
 
 *Disclaimer:* I'm very new to VSCode extensions. Expect this to go slowly with lots of trial and error.
 
 ## Features
-- None
+- Syntax highlighting
 
 ## Planned
-- Syntax highlighting
+- Auto Complete
+- Hover information
 
 
 
