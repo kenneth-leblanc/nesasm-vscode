@@ -5,8 +5,6 @@
     "patterns": [ {
         "include": "#singleLineComment"
     }, {
-        "include": "#multilineComment"
-    }, {
         "include": "#numericConstants"
     }, {
         "include": "#stringConstant"
@@ -22,11 +20,6 @@
             "begin": ";",
             "end": "$",
             "name": "comment.line.semicolon.nesasm"
-        },
-        "multilineComment": {
-            "begin": "/\\*",
-            "end": "\\*/",
-            "name": "comment.multiline.nesasm"
         },
         "numericConstants": {
             "patterns": [ {
@@ -53,7 +46,7 @@
             "name": "keyword.other.instructions.nesasm"
         },
         "directives": {
-            "match": "\\b(?i:INCBIN|INCDIR|INCLUDE|EQU|=|EQM|SET|SETSTR|DC(\\.[BWLS])?|BYTE|WORD|LONG|(D[SV]|RES)(\\.[BWL])?|HEX|IFCONST|IFNCONST|IF|ENDIF|EIF|ELSE|REPEAT|REPEND|ORG|RORG|REND|SEG(\\.U)?|ALIGN|PROCESSOR|ECHO|SUBROUTINE|ERR|LIST|MAC(RO)?|ENDM|MEXIT)\\b",
+            "match": "\\.(?i:INESMIR|INESMAP|INESCHR|INESPRG|FAIL|ENDIF|ELSE|IFNDEF|IFDEF|IF|DATA|CODE|BSS|ZP|DEFCHR|INCCHR|INCLUDE|INCBIN|ENDPROCGROUP|PROCGROUP|ENDP|PROC|ENDM|MACRO|RS|RSSET|DS|WORD|BYTE|DW|DB|ORG|BANK|EQU|OPT|NOMLIST|MLIST|NOLIST|LIST)\\b",
             "name": "keyword.operator.nesasm"
         },
         "label": {
