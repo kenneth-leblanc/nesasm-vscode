@@ -1,14 +1,14 @@
 {
-	"name": "lsp-embedded-language-service-sample",
-	"description": "A language server example using language services to support embedded languages",
-	"author": "Microsoft Corporation",
+	"name": "nesasm-client-server",
+	"description": "A NESASM extension using language services to support NESASM code highlighting",
+	"author": "Kenneth",
 	"license": "MIT",
-	"version": "1.0.0",
+	"version": "0.9.0",
 	"repository": {
 		"type": "git",
-		"url": "https://github.com/Microsoft/vscode-extension-samples"
+		"url": "https://github.com/kenneth-leblanc/nesasm-vscode"
 	},
-	"publisher": "vscode-samples",
+	"publisher": "Kenneth",
 	"categories": [],
 	"keywords": [],
 	"engines": {
