@@ -8,8 +8,12 @@ You still need to provide your own NESASM compiler.
 - Syntax highlighting
 
 ## Planned
-- Auto Complete
+- Completions
 - Hover information
+
+## Maybe
+- Compiler Integration
+- Diagnostics
 
 
 
