@@ -1,16 +1,17 @@
 {
 	"name": "nesasm-client-server",
-	"description": "A NESASM extension using language services to support NESASM code highlighting",
+	"displayName": "NESASM Language Support",
+	"description": "A NESASM extension to support NESASM code highlighting and more",
 	"author": "Kenneth",
 	"license": "MIT",
-	"version": "0.9.1",
+	"version": "0.9.2",
 	"repository": {
 		"type": "git",
 		"url": "https://github.com/kenneth-leblanc/nesasm-vscode"
 	},
 	"publisher": "KengineGaming",
-	"categories": [],
-	"keywords": [],
+	"categories": ["Programming Languages"],
+	"keywords": ["NES", "6502","Nintendo","Assembly","NESASM"],
 	"engines": {
 		"vscode": "^1.74.0"
 	},
