@@ -6,3 +6,4 @@ client/out
 out
 client/server
 .vscode-test
+*.vsix
